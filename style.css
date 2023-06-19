@@ -152,6 +152,11 @@ footer p{
     height: 100%;
   }
 
+  header img:hover, .center img:hover{
+    transition: transform 1s;
+    transform: translateX(0) scale(0.7);
+  }
+
   .title{
     display: flex;
     align-items: flex-start;
@@ -183,6 +188,7 @@ footer p{
     justify-content: space-between;
     padding: 0;
   }
+
   .field{
     padding: 9.2rem;
     width: 50vw;
