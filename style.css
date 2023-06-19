@@ -1,0 +1,190 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--ff);
+}
+
+:root{
+  font-size: 62.5%;
+  --ff: "Mulish", sans-serif;
+  --primary-color: #B52184;
+  --secondary-color: #312D64;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+header img{
+  margin-bottom: 1.7rem;
+  width: 100vw;
+}
+
+h1, h2 {
+  color: var(--primary-color);
+  font-weight: 900;
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+
+p{
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-top: .5rem;
+}
+
+.hide{
+  display: none;
+}
+
+#seta{
+  width: 5.859rem;
+  height: 10.5rem; 
+  margin: 3.5rem 0 9.3rem;
+}
+
+.center{
+  background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+  padding: 5.3rem 3.9rem;
+  display: flex;
+  gap: 4.9rem;
+  flex-direction: column;
+}
+
+.card{
+  background: #fff;
+  border-radius: 2rem;
+  padding: 2.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.3rem;
+  align-items: flex-start;
+}
+
+.card p{
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+form{
+  padding: 7.9rem 4.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4.3rem;
+}
+
+.field input, .field textarea{
+  padding: 1.2rem 3.6rem;
+  border: 1.5px solid #312D64;
+  border-radius: 1.6rem;
+  width: 100%;
+}
+
+.field textarea{
+  padding: 1.2rem;
+}
+
+.field{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  color: var(--secondary-color);
+}
+
+.field button{
+  width: 15rem;
+  border-radius: 2rem;
+  background: var(--secondary-color);
+  color: #fff;
+  border: none;
+  height: 4.5rem;
+}
+
+footer{
+  height: 7.8rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--secondary-color);
+}
+
+footer p{
+  color: #fff;
+  font-size: 1.9rem;
+  line-height: 2.4rem;
+}
+
+.profile, .at{
+  position: relative;
+}
+
+#profile{
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+#at{
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+@media (min-width: 1024px) {
+  header{
+    flex-direction: row-reverse;
+    height: 83.6rem;
+    gap: 2.8rem;
+    margin-bottom: 10.4rem;
+  }
+
+  header img{
+    width: 72rem;
+    height: 100%;
+  }
+
+  .title{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  #seta{
+    margin: 10.9rem 0 0 2.3rem;
+  }
+}
+
+@media (min-width: 1440px){
+  #seta{
+    margin-left: 0;
+  }
+
+  .center{
+    flex-direction: row;
+    padding: 6.4rem 11rem;
+  }
+
+  .hide{
+    display: block;
+    margin: 0;
+  }
+
+  form{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .field{
+    padding: 9.2rem;
+    width: 50vw;
+  }
+}
